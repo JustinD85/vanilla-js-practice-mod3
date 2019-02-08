@@ -1,0 +1,97 @@
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "non-card-area card-area";
+  grid-template-columns: 1fr 2fr;
+}
+
+.logo {
+  height: 50px;
+  text-align: center;
+}
+
+.non-card-area {
+  grid-area: non-card-area;
+  background: lightblue;
+  padding: 3%;
+}
+
+form {
+  display: grid;
+  width: 250px;
+  margin: 0 auto;
+}
+
+label {
+  display: grid;
+  margin-bottom: 4%;
+}
+
+button,
+input,
+textarea {
+  border-radius: 10px;
+  border: 1px solid lightcyan;
+  padding-left: 1%;
+  outline: none;
+}
+
+.title {
+  height: 3ch;
+  padding-left: 2ch;
+}
+
+.body {
+  height: 400px;
+  padding: 2%;
+}
+
+button {
+  width: 100px;
+}
+
+.card-area {
+  grid-area: card-area;
+  background: lightskyblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 5%;
+
+  overflow: scroll;
+}
+
+.idea {
+  position: relative;
+  background: lightcyan;
+  border-radius: 10px;
+  min-width: 40ch;
+  max-width: 300px;
+  height: 200px;
+  margin: 1% 0;
+  padding: 1%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.idea-body {
+  height: 12ch;
+  overflow: scroll;
+  background: #ccf3f3;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 3ch;
+}
+
+.idea-quality {
+  float: left;
+}
+
+.idea-delete {
+  float: right;
+  color: red;
+}
